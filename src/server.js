@@ -5,11 +5,11 @@ const app = express();
 app.use(express.json());
 
 const dbConfig = {
-  user: process.env.POSTGRES_USER,
-  host: process.env.POSTGRES_HOST,
-  database: process.env.POSTGRES_DB,
-  password: process.env.POSTGRES_PASSWORD,
-  port: process.env.POSTGRES_PORT,
+  user: process.env.POSTGRESQL_ADDON_USER,
+  host: process.env.POSTGRESQL_ADDON_HOST,
+  database: process.env.POSTGRESQL_ADDON_DB,
+  password: process.env.POSTGRESQL_ADDON_PASSWORD,
+  port: process.env.POSTGRESQL_ADDON_PORT,
 };
 
 const pool = new Pool(dbConfig);
